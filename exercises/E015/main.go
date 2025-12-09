@@ -6,10 +6,11 @@ import (
 )
 
 func main() {
-	birthYear := 2000
+	year := 2000
 	currentYear := time.Now().Year()
 
-	for year := birthYear; year <= currentYear; year++ {
+	for year <= currentYear {
 		fmt.Println(year)
+		year++
 	}
 }
